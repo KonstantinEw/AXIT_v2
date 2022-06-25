@@ -1,0 +1,61 @@
+.stylish {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/image-2.jpg"), center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    &__main-title {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        color: #fff;
+        text-align: center;
+        text-transform:uppercase;
+    }
+
+    &__sub-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        text-align:center;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 70px;
+    }
+
+    &__button {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+        border: 1px solid #fff;
+        width: 370px;
+        height: 60px;
+        background: rgba(0, 0, 0, .0);
+        transition: .3s;
+        cursor: pointer;
+
+        &--wrapper {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+        &:hover {
+            border: 1px solid #EC7979;
+            color: #EC7979;
+        }
+
+        &:active {
+            background-color: #AB4949;
+            border: 1px solid #AB4949;
+            color: #fff;
+        }
+    }
+}

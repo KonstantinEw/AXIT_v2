@@ -2,13 +2,11 @@
 @import './vars';
 @import './mixins';
 @import './adjustments';
-
-// components
-// @import './components/btns';
-
-
+@import './components';
 
 // blocks
+
+@import './block/footer';
 @import './block/header';
 @import './block/banner-section';
 @import './block/social-scss';
@@ -17,4 +15,4 @@
 @import './block/costumers-section';
 @import './block/stylish-section';
 @import './block/tabs-section';
-@import './block/footer';
+@import './block/contact-section'

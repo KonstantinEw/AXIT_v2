@@ -1,0 +1,101 @@
+.prices {
+    background: #F5F5F5;
+    height: 100hv;
+    padding: 100px 0px 50px 0px;
+
+    &__main-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__sub-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
+        color: #86878B;
+        margin-bottom: 80px;
+    }
+
+    &__prices-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+
+        .prices-item {
+            display: flex;
+            flex-direction: column;
+            width: 370px;
+            list-style: none;
+            transition: transform .3s ease-in-out;
+
+            &__title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                background: #333333;
+                border: 2px solid #F5F5F5;
+                height: 60px;
+                padding: 10px 0px;
+            }
+
+            &__cost {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                background: #333333;
+                border: 2px solid #F5F5F5;
+                height: 100px;
+                padding: 17px 0px;
+            }
+
+            &__sub-title {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: center;
+                text-transform: capitalize;
+                color: rgba(255, 255, 255, 0.5);
+                background: #333333;
+                border: 2px solid #F5F5F5;
+                padding: 10px 0;
+            }
+
+            &__item-space {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #86878B;
+                background:#FFFFFF;
+                border: 1px solid #F5F5F5;
+                padding: 15px 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+                border-radius: 5px;
+                transform: translateY(-15px);
+            }
+        }
+    }
+}

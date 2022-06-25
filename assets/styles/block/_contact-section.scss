@@ -1,0 +1,99 @@
+.contact {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+    &__main-title {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        color: #000;
+        text-align: center;
+        text-transform:uppercase;
+    }
+
+    &__sub-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        text-align:center;
+        color: #86878B;
+        font-weight: 400;
+        margin-bottom: 100px;
+    }
+
+    &__button {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #fff;
+        border: 1px solid #EC7979;
+        width: 370px;
+        height: 60px;
+        background: #EC7979;
+        transition: .3s;
+        cursor: pointer;
+
+        &--wrapper {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+
+        &:hover {
+            background-color: #AB4949;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #EC7979;
+            box-shadow: inset 0px 0px 10px #AB4949;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    gap:50px;
+
+    &--wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 50px 0px;
+    }
+
+    &__message {
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        resize: none;
+        outline: none;
+    }
+
+    &-input {
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0px 50px;
+        outline: none;
+        padding-bottom: 10px;
+    }
+}
+
+.contact-form__message::placeholder, .contact-form-input::placeholder {
+    color: #BDBDBD;
+} 

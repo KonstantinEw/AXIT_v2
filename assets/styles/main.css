@@ -129,7 +129,7 @@ body {
 /* Banner */
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/assets/images/image-1.png"), center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/image-1.png"), center;
     min-height: 100%;
     width: 100%;
     /* max-width: 1510px; */
@@ -699,7 +699,7 @@ p.tab-content__info--paragraph {
     height: 100%;
     padding-top: 100px;
     padding-bottom: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/assets/images/image-2.jpg"), center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/image-2.jpg"), center;
     background-size:cover;
     background-repeat: no-repeat;
 }

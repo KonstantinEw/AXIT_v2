@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -18,8 +18,8 @@ h3,
 h4,
 h5,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -36,22 +36,18 @@ body {
   line-height: 1.5;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   list-style: none;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
   display: block;
-}
-
-article > * + * {
-  margin-top: 1em;
 }
 
 :root {
@@ -62,6 +58,18 @@ article > * + * {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0px auto;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 992px;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
 }
 
 body {
@@ -141,7 +149,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 570px;
-  margin-right: 170px;
   list-style: none;
 }
 .nav__item {
@@ -166,13 +173,21 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image-1.png"), center;
   min-height: 100%;
   width: 100%;
-  /* max-width: 1510px; */
-  max-height: 1026px;
   padding: 283px 170px 185px 170px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .banner {
+    padding: 137px 20px 106px 115px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .banner {
+    padding: 85px 16px 50px 16px;
+  }
 }
 .banner__container {
   display: flex;
@@ -363,7 +378,6 @@ body {
 .about__about-list {
   list-style: none;
   display: flex;
-  /* padding-inline-start: 0px; */
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;

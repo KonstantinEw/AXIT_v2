@@ -1,0 +1,17 @@
+@mixin container {
+	width: var(--large-container);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@mixin mediaTablet {
+	@media screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin mediaMobile {
+	@media screen and (max-width: 1023px) {
+		@content;
+	}
+}

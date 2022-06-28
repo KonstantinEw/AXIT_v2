@@ -2,13 +2,20 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/image-1.png"), center;
     min-height: 100%;
     width: 100%;
-    /* max-width: 1510px; */
-    max-height: 1026px;
+    // max-width: 1510px;
+    // max-height: 1026px;
     padding: 283px 170px 185px 170px ;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    
+    @include mediaTablet {
+        padding: 137px 20px 106px 115px;
+    }
+    @include mediaMobile {
+        padding: 85px 16px 50px 16px;
+    }
 
     &__container {
         display: flex;
